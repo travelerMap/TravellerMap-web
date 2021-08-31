@@ -1,8 +1,8 @@
 /* CSS reset */
 *, *:before, *:after { 
-  margin:0;
-  padding:0;
-  font-family: Arial,sans-serif;
+  /*margin:0;*/
+  /*padding:0;*/
+  /*font-family: Arial,sans-serif;*/
 }
  
 /* remove a linha dos links */
@@ -16,7 +16,6 @@ a.links{
 }
 
 body{
-    background: url("../imagens/Torre_de_Cristal_-_Recife-PE(2).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,11 +71,23 @@ body{
   }
 }
 
+.texto_art{
+  font-family: 'Trocchi', serif;
+  color: #066a75;
+}
+
+.completo_img{
+  float: left;
+  padding-right: 10px;
+}
+
 .content{
-  width: 500px;
-  min-height: 560px;   
-  margin: 50px auto;  
+  width: 80vw;
+  min-height: 100vh;   
+  margin: 1% auto;  
   position: relative;   
+  align-items: center;
+  padding-left: 5%;
 }
 h1{
   font-size: 48px;
