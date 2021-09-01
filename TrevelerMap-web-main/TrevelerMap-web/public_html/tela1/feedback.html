@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style_2.css" />
+</head>
+
+<body>
+
+
+    <div class="content">
+
+        <div id="feedback">
+            <form id="notas">
+                <a class="saida" id="bordasaida"></a>
+
+                <h1>Avaliação</h1>
+
+                <p>Avalie aqui:</p>
+
+                <div>
+
+                    <label for="notas">1</label>
+                    <input type="radio" id="notas" name="notas" value="1">
+                    &nbsp
+
+                    <label for="notas">2</label>
+                    <input type="radio" id="notas" name="notas" value="2">
+                    &nbsp
+
+                    <label for="notas">3</label>
+                    <input type="radio" id="notas" name="notas" value="3">
+                    &nbsp
+
+                    <label for="notas">4</label>
+                    <input type="radio" id="notas" name="notas" value="4">
+                    &nbsp
+
+                    <label for="notas">5</label>
+                    <input type="radio" id="notas" name="notas" value="5">
+
+                </div>
+                <!--Lembrar de trocar o metodo de pular linha -->
+                <br>
+                <p>Faça seu comentario:</p>
+
+                <div>
+
+                    <!--<input type="text" id="coment" name="coment" maxlength="200" placeholder="Digite aqui"> -->
+                    <textarea name="comentario" placeholder="Digite aqui" maxlength="250"></textarea>
+                    <input type="submit" class="enviar" value="Enviar" />
+
+                </div>
+
+                <footer>
+                    <p class="saida">
+                        Caso não queira comentar:
+                        <a href="#bordasaida">Sair</a>
+                    </p>
+                </footer>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
