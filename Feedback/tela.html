@@ -10,12 +10,11 @@
 </head>
 
 <body>
-
-
+    
     <div class="caixa" >
 
         
-            <form id="notas">
+            <form   action="feedback-class.php" method="POST">
                 <a class="saida" id="bordasaida"></a>
 
                 <h1 class="cap1">Avaliação</h1>
@@ -53,16 +52,16 @@
                 <p class="par2">Faça seu comentario:</p>
 
                 <div class="texto">
-                    <textarea name="comentario" placeholder="Digite aqui" maxlength="250"></textarea>
+                    <textarea id="comentario" name="comentario" placeholder="Digite aqui" maxlength="250"></textarea>
                     <input type="submit" value="Enviar" class="enviar" />
                 </div>
 
-                <div class="rodape">
+                <footer>
                     <p>
                         Caso não queira comentar:
                         <button type="button" class="botaosai">Sair</button>
                     </p>
-                </div>
+                </footer>
 
             </form>
 
