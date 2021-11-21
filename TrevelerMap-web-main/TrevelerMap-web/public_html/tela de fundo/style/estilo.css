@@ -8,8 +8,7 @@
 /* === cabeçalho, baner, logo, etc === */
 header{
     display: flex;
-    height: 150px;    
-    border: 1px solid black;
+    height: 150px;   
 }
 
 header.banner{    
