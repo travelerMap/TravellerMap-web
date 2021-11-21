@@ -16,61 +16,10 @@ a.links{
 }
 
 body{
-    background: url("../imagens/Torre_de_Cristal_-_Recife-PE(2).jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: changeBackgroundImage 80s infinite;
+    
 }
 
-/* criando o efeito de slide nas imagens do body */
-@keyframes changeBackgroundImage {
-  0% {
-    background-image: url('../imagens/1.jpg');
-  }
-  7% {
-    background-image: url('../imagens/2.jpg');
-  }
-  14% {
-    background-image: url('../imagens/3.jpg');
-  }
-  21% {
-    background-image: url('../imagens/4.jpg');
-  }
-  28% {
-    background-image: url('../imagens/5.jpg');
-  }
-  35% {
-    background-image: url('../imagens/6.jpeg');
-  }
-  42% {
-    background-image: url('../imagens/7.jpg');
-  }
-  49% {
-    background-image: url('../imagens/8.jpg');
-  }
-  56% {
-    background-image: url('../imagens/9.jpg');
-  }
-  63% {
-    background-image: url('../imagens/10.jpg');
-  }
-  70% {
-    background-image: url('../imagens/11.jpeg');
-  }
-  77% {
-    background-image: url('../imagens/12.jpg');
-  }
-  84% {
-    background-image: url('../imagens/13.jpg');
-  }
-  91% {
-    background-image: url('../imagens/14.jpg');
-  }
-  100% {
-    background-image: url('../imagens/15.jpg');
-  }
-}
+
 
 .content{
   width: 500px;
@@ -95,6 +44,9 @@ h1:after{
   margin-top: 10px;
   background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
   background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+p{
+  margin-bottom:15px;
 }
 
 p,label{
@@ -173,6 +125,23 @@ input[type="email"]{
 
  
 /*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: rgb(61, 157, 179);
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+ 
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+ 
+  transition: all 0.2s linear;
+}
+
 /*botão entrar,cadastrar*/
 .botao1,.botao2{
   width: 100%!important;
@@ -191,30 +160,6 @@ input[type="email"]{
   transition: all 0.2s linear;
 }
 
-
-/* botão enviar*/
-.enviar{
-  
-  width: 20%!important;
-  cursor: pointer;  
-  background: rgb(61, 157, 179);
-  padding: 8px 5px;
-  color: #fff;
-  font-size: 20px;  
-  border: 1px solid #fff;   
-  margin-bottom: 10px;  
-  text-shadow: 0 1px 1px #333;
-  margin-top: 20px;
-  -webkit-border-radius: 5px;
-  border-radius: 10px;
- 
-  transition: all 0.2s linear;
-
-}
-
-
-
- 
 /*estilo do botão submit no hover */
 input[type="submit"]:hover{
   background: #4ab3c6;
@@ -265,24 +210,6 @@ textarea{
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s  linear;
 }
-/*botão sair*/
-.saida a{
-  font-weight: bold;
-  background: #f7f8f1;
-  padding: 6px;
-  color: rgb(29, 162, 193);
-  margin-left: 10px;
-  border: 1px solid #cbd518;
- 
-  -webkit-border-radius: 4px;
-  border-radius: 10px;  
- 
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s  linear;
-
-}
-
-
  
 .link a:hover {
   color: #39bfd7;
@@ -293,8 +220,7 @@ textarea{
 
 
 #cadastro, 
-#login,
-#feedback{
+#login{
   position: absolute;
   top: 0px;
   width: 88%;   
