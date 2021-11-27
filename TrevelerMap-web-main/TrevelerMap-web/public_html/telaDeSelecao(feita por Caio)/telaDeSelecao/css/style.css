@@ -86,10 +86,8 @@ body{
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    word-wrap: break-word;
-    background-color:#e6f2ff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.856);
+    word-wrap: break-word;    
+    background-clip: border-box;    
     border-radius: 30px;  
     padding: 15px 6% 60px 6%;
     margin-right: 6%;

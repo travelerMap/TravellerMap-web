@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../telaDeAvaliacao/css/style_telaDeAvaliacao.css"/>
+    <link rel="stylesheet" type="text/css" href="ryan1.css"  /> 
 </head>
 
 <body>
+    
+    <div class="caixa" >
 
-
-    <div class="content">
-
-        <div id="feedback">
-            <form id="notas">
+        
+            <form   action="feedback-class.php" method="POST">
                 <a class="saida" id="bordasaida"></a>
 
-                <h1>Avaliação</h1>
+                <h1 class="cap1">Avaliação</h1>
 
-                <p>Avalie aqui:</p>
+                <div class="cap">
+
+                </div>
+
+                <p class="par1">Avalie aqui:</p>
 
                 <div>
 
@@ -44,28 +47,25 @@
                     <input type="radio" id="notas" name="notas" value="5">
 
                 </div>
-                <!--Lembrar de trocar o metodo de pular linha -->
-                <br>
-                <p>Faça seu comentario:</p>
+                
+                
+                <p class="par2">Faça seu comentario:</p>
 
-                <div>
-
-                    <!--<input type="text" id="coment" name="coment" maxlength="200" placeholder="Digite aqui"> -->
-                    <textarea name="comentario" placeholder="Digite aqui" maxlength="250"></textarea>
-                    <input type="submit" class="enviar" value="Enviar" />
-
+                <div class="texto">
+                    <textarea id="comentario" name="comentario" placeholder="Digite aqui" maxlength="250"></textarea>
+                    <input type="submit" value="Enviar" class="enviar" />
                 </div>
 
                 <footer>
-                    <p class="saida">
+                    <p>
                         Caso não queira comentar:
-                        <a href="#bordasaida">Sair</a>
+                        <button type="button" class="botaosai">Sair</button>
                     </p>
                 </footer>
 
             </form>
 
-        </div>
+      
 
 
     </div>
