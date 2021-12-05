@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_2.css" />
+    
+
+    <title>Cinema São Luiz
+    </title>
+
+</head>
+<body>
+    <div class="container" >
+
+        <div class="content">      
+          <!--FORMULÁRIO DE LOGIN-->
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro" class="container">
+                <form method="post" action=""> 
+                    <h1>Cinema São Luiz</h1> 
+                    <br>
+                    <div>
+                        <div>
+                            <div class="texto_art">
+                              <p>Inaugurado no dia 6 de setembro de 1952 e situado às margens do Rio Capibaribe
+                                e na cabeceira da mais moderna ponte da cidade à época, a Ponte Duarte Coelho,
+                                 o São Luiz tornou-se um dos mais emblemáticos cinemas do Recife, 
+                                 prezando por essa arte em sua concepção clássica, com exibição em cine-teatro.
+                                  Hoje o Cinema São Luiz é o de mais rica concepção artística e arquitetônica
+                                  (com referencias à Art déco) do Recife e um dos últimos cinemas de rua do país,
+                                   encontra-se no térreo do Edifício Duarte Coelho e ocupa os quatro primeiros pavimentos do prédio, que tem catorze andares ao todo.</p>
+
+
+                                <br/> <br/>
+                                <p>
+                                  Endereço: Rua da Aurora, 175, Boa Vista – Recife
+                                  Visitação: Terça a domingo, nos horários das sessões
+                                  Telefone: (81) 3184.3157
+                                  Entrada: R$ 10 (inteira) e R$ 5 (meia) | Às terças: R$ 6,00 (inteira) e R$ 3,00 (meia) E-mail: saoluiz.recife@gmail.com
+                              </p>
+                                </div>
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                  <div class="numbertext">1 / 3</div>
+                                  <img src="imagens/completo/cinesaoluiz.jpg" style="width:828px; height: 466px;">
+                                  <div class="text">Parte frontal</div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">2 / 3</div>
+                                  <img src="imagens/completo/cinesaoluiz1.jpg" style="width:828px; height: 466px;">
+                                  <div class="text">Letreiro</div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">3 / 3</div>
+                                  <img src="imagens/completo/cinesaoluiz2.jpg" style="width:828px; height: 466px;">
+                                  <div class="text">Ponto Zero</div>
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                                </div>
+                                <br>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(1)"></span> 
+                                  <span class="dot" onclick="currentSlide(2)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                </div>
+                                
+                                <div style="overflow: hidden;">
+                                <a href="..\telaDeAvaliacao\telaDeAvaliacao.html" class="botao_feedback" style="float: right;">Avalie</a>
+                                <a href="..\pontos_cuturais\pontosCulturais.html" class="botao_feedback" style="float: left; margin-left: 80%;">Voltar</a>
+                                </div>
+
+                                <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

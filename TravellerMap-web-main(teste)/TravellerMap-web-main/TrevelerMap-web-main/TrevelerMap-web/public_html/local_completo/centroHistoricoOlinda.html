@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_2.css" />
+
+    <title>Centro Histórico de Olinda
+    </title>
+
+</head>
+<body>
+    <div class="container" >
+
+        <div class="content">      
+          <!--FORMULÁRIO DE LOGIN-->
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro" class="container">
+                <form method="post" action=""> 
+                    <h1>Centro Histórico de Olinda</h1> 
+                    <br>
+                    <div>
+                        <div>
+                            <div class="texto_art">
+                                <p>O Centro Histórico de Olinda, também chamado de Cidade Alta, abrange a área histórica do município brasileiro de Olinda, no estado de Pernambuco.
+                                    Quase um terço da área total do município é tombado. A preservação desse sítio histórico começou na década de 1930,
+                                    quando os principais monumentos foram protegidos por tombamento. A partir daí foram promovidas várias ações no sentido de preservar todo o patrimônio histórico, cultural e arquitetônico ainda existente no município. O sítio foi declarado Monumento Nacional pelo Congresso Nacional em 1980, 
+                                    e em 1982 foi reconhecido como patrimônio mundial pela UNESCO.                                  
+                                    Olinda foi a urbe mais rica do Brasil Colônia entre o século XVI e o início do século XVII de acordo com escritores da época como Pero de Magalhães Gândavo, chegando a ser referida como uma "Lisboa pequena", dada a opulência só comparável à da Corte portuguesa.</p>
+                                <br><br>
+                                <p>
+                                    Endereço: R. do Amparo, 363 - Carmo, Olinda - PE, 53070-410.
+                                </p>
+                                </div>
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                  <div class="numbertext">1 / 3</div>
+                                  <img src="imagens/completo/centroolinda.jpg" style="width:828px; height: 466px;">
+                                  <div class="text">Parte frontal</div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">2 / 3</div>
+                                  <img src="imagens/completo/centroolinda1.jpg" style="width:828px; height: 466px;">
+                                  <div class="text">Rua 1 </div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">3 / 3</div>
+                                  <img src="imagens/completo/centroolinda2.jpeg" style="width:828px; height: 466px;">
+                                  <div class="text">Rua 2 </div>
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                                </div>
+                                <br>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(1)"></span> 
+                                  <span class="dot" onclick="currentSlide(2)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                </div>
+                                
+                                <div style="overflow: hidden;">
+                                  <a href="..\telaDeAvaliacao\telaDeAvaliacao.html" class="botao_feedback" style="float: right;">Avalie</a>
+                                  <a href="..\pontos_cuturais\pontosCulturais.html" class="botao_feedback" style="float: left; margin-left: 80%;">Voltar</a>
+                                  </div>
+
+                                <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
