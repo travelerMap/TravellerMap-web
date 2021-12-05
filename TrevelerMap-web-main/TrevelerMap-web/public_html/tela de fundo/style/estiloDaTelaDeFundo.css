@@ -1,8 +1,7 @@
 /* === resets da pagina ===*/
 *{
   margin: 0%;
-	padding: 0%;
-	border: none;		
+	padding: 0%;		
 }
 
 /* === cabeçalho, baner, logo, etc === */
@@ -49,6 +48,14 @@ h1{
 
 /* ===  corpo do site ===*/
 
+.conteudo{
+  position: absolute;  
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: tomato;  
+}
+
 .workSpace{    
     align-items: center;
     position: absolute;
@@ -56,7 +63,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: aqua;
 
 }
@@ -65,14 +72,6 @@ h1{
   
   overflow: auto;
 
-}
-
-.conteudo{
-    position: absolute;  
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    background-color: tomato;  
 }
 
 /* === slides do background === */
@@ -84,8 +83,7 @@ h1{
     background-repeat: no-repeat;
     animation: changeBackgroundImage 80s infinite;  
     padding: 0%;
-    margin: 0%;
-    border: solid;  
+    margin: 0%;      
 }
 
 /* criando o efeito de slide nas imagens do body */
@@ -141,13 +139,12 @@ h1{
 iframe {
   width: 90%;
   height: 100%;
-  margin-left: 0px;
-  padding: 0;
-  border: solid;
-  overflow: hidden;      
+  margin-left: 0px;    
+  overflow: hidden;   
+  border: none;   
 }
 
-iframe #iframe::-webkit-scrollbar{
+iframe::-webkit-scrollbar{
   display: none;
 }
 
