@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".FormularioLogin">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_treveler_map"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/descrição_da_logo" />
+
+        <View
+            style="@style/conteinerComponents"
+            android:id="@+id/conteinerComponents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            />
+
+        <EditText
+            android:id="@+id/editEmail"
+            style="@style/editText"
+            android:inputType="textEmailAddress"
+            android:hint="@string/texto_email"
+            android:drawableEnd="@drawable/email_icone"
+            app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+            app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+            app:layout_constraintTop_toTopOf="@id/conteinerComponents"
+            android:autofillHints="emailAddress"
+            />
+
+        <EditText
+            android:id="@+id/editSenha"
+            style="@style/editText"
+            android:inputType="textPassword"
+            android:hint="@string/texto_senha"
+            android:drawableEnd="@drawable/olho_icone"
+            app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+            app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+            app:layout_constraintTop_toBottomOf="@id/editEmail"
+            android:autofillHints="password"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botaoEntrar"
+            style="@style/botao"
+            android:text="@string/texto_botao_entrar"
+            app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+            app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+            app:layout_constraintTop_toBottomOf="@id/editSenha"
+            />
+
+        <ProgressBar
+            android:id="@+id/barraDeProgresso"
+            style="@style/barraDeProgresso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/conteinerComponents"
+            />
+
+        <TextView
+            android:id="@+id/textoCadastreSe"
+            style="@style/textoCadastreSe"
+            android:text="@string/cadastre_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barraDeProgresso"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

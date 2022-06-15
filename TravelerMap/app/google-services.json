@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "223903566019",
+    "project_id": "traveler-map-be735",
+    "storage_bucket": "traveler-map-be735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223903566019:android:6534fa5a64179840613a76",
+        "android_client_info": {
+          "package_name": "com.traveler.travelermap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223903566019-3kaggelfa4pfcaf0ll1t94bmg4uhgs1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnUUPZFHIE-hB4RzLWUMo0j-RFsLZQNVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223903566019-3kaggelfa4pfcaf0ll1t94bmg4uhgs1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

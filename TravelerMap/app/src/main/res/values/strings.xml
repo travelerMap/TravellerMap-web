@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Traveler Map</string>
+    <string name="texto_botao_entrar">Entrar</string>
+    <string name="cadastre_se">criar uma conta</string>
+    <string name="texto_senha">Senha</string>
+    <string name="texto_email">Email</string>
+    <string name="descrição_da_logo">image de um avião preto na frente de um planeta, uma representação dos continentes na cor verde</string>
+    <string name="texto_cadastre_se">Cadastre-se</string>
+    <string name="texto_nome">Nome</string>
+    <string name="texto_botao_cadastrar">Cadastrar</string>
+    <string name="texto_botao_deslogar">Fazer Logof</string>
+</resources>

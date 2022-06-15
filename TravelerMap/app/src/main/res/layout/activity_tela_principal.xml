@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".TelaPrincipal">
+
+        <View
+            android:id="@+id/conteiner_usuario"
+            style="@style/conteinerUsuario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <ImageView
+            style="@style/iconeUsuario"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintStart_toStartOf="@id/conteiner_usuario"
+            app:layout_constraintEnd_toEndOf="@id/conteiner_usuario"
+            app:layout_constraintTop_toTopOf="@id/conteiner_usuario"
+            app:layout_constraintBottom_toBottomOf="@id/conteiner_usuario"
+            />
+
+        <ImageView
+            android:id="@+id/iconeUsuario"
+            style="@style/iconeNomeUsuario"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/conteiner_usuario"
+            />
+
+        <TextView
+            android:id="@+id/nomeDoUsuario"
+            style="@style/textosDoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jonatas Severino da Silva"
+            app:layout_constraintTop_toBottomOf="@id/conteiner_usuario"
+            app:layout_constraintStart_toEndOf="@id/iconeUsuario"
+            app:layout_constraintBottom_toBottomOf="@id/iconeUsuario"
+            />
+
+        <ImageView
+            android:id="@+id/iconeEmail"
+            style="@style/iconeNomeUsuario"
+            android:src="@drawable/email_icone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconeUsuario"
+            />
+
+        <TextView
+            android:id="@+id/emailDoUsuario"
+            style="@style/textosDoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@dominio.com"
+            app:layout_constraintStart_toEndOf="@id/iconeEmail"
+            app:layout_constraintTop_toBottomOf="@id/nomeDoUsuario"
+            app:layout_constraintBottom_toBottomOf="@id/iconeEmail"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/botao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailDoUsuario"
+            android:layout_marginTop="30dp"
+            android:text="@string/texto_botao_deslogar"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
